@@ -1,0 +1,247 @@
+/*
+| Breq Therem
+| 11 DEC 2020
+| CS-125H - Lab 9
+*/
+html {
+  background: #121314;
+}
+
+header {
+  background: rgb(28, 29, 31);
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+}
+
+.menu_icon .active a:link {
+  text-decoration: none;
+  color: skyblue;
+}
+
+.menu_icon {
+  width: 35px;
+  height: 100%;
+  float: right;
+  padding: 20px;
+}
+
+.menu_icon ul {
+  padding: 0;
+  display: none;
+  list-style-type: none;
+  background-color: #54585c;
+  position: absolute;
+  top: 80%;
+  right: 0;
+  margin-left: -200%;
+}
+
+.menu_icon ul li {
+  padding: 10px 25px;
+  float: none;
+  text-align: center;
+}
+
+.menu_icon:hover > ul {
+  display: block;
+}
+
+.menu_icon div {
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  padding: 1px;
+}
+
+.menu_icon a:link, .menu_icon a:visited, .menu_icon a:hover
+{
+  color: white;
+}
+
+.menu_icon li a:hover:link, .menu_icon li:focus a:link, .menu_icon a:link {
+  color: white;
+  font-weight: normal;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: skyblue;
+}
+
+:link {
+  text-decoration: none;
+}
+
+footer a:link, footer a:visited, footer a:hover, footer a:active {
+  color: white;
+}
+
+main {
+  margin: 100px auto 50px auto;
+  padding:10px 30px 30px 30px;
+  width: 70%;
+  background: #2c2e30;
+  border-radius: 15px;
+}
+
+
+header h1 {
+  padding-left: 75px;
+  color: White;
+  width: 100%;
+  text-align: center;
+  font-family: verdana, arial, sans-serif;
+}
+
+h1 {
+  color: lightcyan;
+  font-size: 200%;
+  width: 100%;
+  text-align: center;
+  font-family: verdana, arial, sans-serif;
+}
+
+h2 {
+  color: lightcyan;
+  text-align: center;
+  padding-top: 25px;
+}
+
+h3 {
+  color: LightCyan;
+  text-align: center;
+  padding-top: 25px;
+}
+
+p {
+  color: white;
+}
+
+ul {
+  padding: 10px;
+  margin-left: 10%;
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+blockquote {
+  color:white;
+}
+
+
+footer>h3 {
+  color: white;
+  font-size: 75%;
+  margin-bottom:25px;
+  margin-left:25px;
+}
+
+#footerLeft {
+  width: 33%;
+  float: left;
+}
+
+#footerMid {
+  width: 33%;
+  float: left;
+}
+
+#footerRight {
+  width: 33%;
+  float: right;
+}
+
+/*
+  Why do margins not work with the floating elements? If I try to adjust the bottom or top margins of the footer, nothing happens, and if I try to adjust the margins of the "floor" paragraph, nothing happens.
+*/
+
+#floor {
+  text-align: center;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  color: lightblue;
+  margin: 10px;
+}
+
+table {
+  margin: auto;
+  border: 3px solid white;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid white;
+  padding: 4px;
+  text-align: center;
+}
+
+td {
+  color: #bfbfbf;
+}
+
+th {
+  color: white;
+}
+thead {
+  background-color: #575757;
+  border: 3px solid white;
+}
+
+tbody {
+  background-color: #121314;
+}
+
+td:nth-child(7)
+{
+  color: skyblue;
+}
+
+/*
+    FORMS
+*/
+
+fieldset {
+  text-align: center;
+  padding: 1.25%;
+  border: none;
+}
+
+input, textarea {
+  margin: 5px;
+  width: 40%;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#submit {
+  border: 1px solid white;
+  background: #54585c;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #footerLeft, #footerMid, #footerRight {
+    float: none;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 180%;
+  }
+}
+
+img {
+  border: 2px solid grey;
+  display: block;
+  margin: 25px auto;
+  max-width: 300px;
+  width: 50%;
+}
